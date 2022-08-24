@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>João Ninguém</title>
+    <link>http://hasanibnarif.github.io/pt-br/</link>
+    <description>Recent content on João Ninguém</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 11 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="http://hasanibnarif.github.io/pt-br/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Guia de Sintaxe Markdown</title>
+      <link>http://hasanibnarif.github.io/pt-br/posts/markdown-syntax/</link>
+      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://hasanibnarif.github.io/pt-br/posts/markdown-syntax/</guid>
+      <description>&lt;p&gt;Esse artigo é um exemplo básico para mostrar a sintaxe Markdown que é usada nos arquivos de conteúdo do Hugo. Ele também mostrar como cada elemento básico HTML é estilizado com CSS com os temas do Hugo.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Conteúdo Rico</title>
+      <link>http://hasanibnarif.github.io/pt-br/posts/rich-content/</link>
+      <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://hasanibnarif.github.io/pt-br/posts/rich-content/</guid>
+      <description>&lt;p&gt;O Hugo vem com vários &lt;a href=&#34;https://gohugo.io/content-management/shortcodes/#use-hugos-built-in-shortcodes&#34;&gt;Shortcodes Internos&lt;/a&gt; para conteúdo rico, assim como uma &lt;a href=&#34;https://gohugo.io/about/hugo-and-gdpr/&#34;&gt;Configuração de Privacidade&lt;/a&gt; e uma gama de Shortcodes simples que permitem embutir versões estáticas e sem JS de várias de redes sociais.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Mais Conteúdo Rico</title>
+      <link>http://hasanibnarif.github.io/pt-br/posts/more-rich-content/</link>
+      <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://hasanibnarif.github.io/pt-br/posts/more-rich-content/</guid>
+      <description>&lt;p&gt;O Hugo Coder proporciona alguns Shortcodes Customizados.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Texto de Exemplo</title>
+      <link>http://hasanibnarif.github.io/pt-br/posts/placeholder-text/</link>
+      <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://hasanibnarif.github.io/pt-br/posts/placeholder-text/</guid>
+      <description>&lt;p&gt;Lorem est tota propiore conpellat pectoribus de pectora summo.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Configuração de Equações Matemáticas</title>
+      <link>http://hasanibnarif.github.io/pt-br/posts/math-typesetting/</link>
+      <pubDate>Fri, 08 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://hasanibnarif.github.io/pt-br/posts/math-typesetting/</guid>
+      <description>&lt;p&gt;Em um projeto Hugo as Notações Matemáticas podem ser usadas com a ajuda de bibliotecas JavaScript de terceiros.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Suporte a Emojis</title>
+      <link>http://hasanibnarif.github.io/pt-br/posts/emoji-support/</link>
+      <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://hasanibnarif.github.io/pt-br/posts/emoji-support/</guid>
+      <description>&lt;p&gt;Emojis podem ser ativados em um projeto Hugo de diversar formas.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Página Externa: Wiki Hugo Coder</title>
+      <link>http://hasanibnarif.github.io/pt-br/posts/hugo-coder-wiki/</link>
+      <pubDate>Mon, 04 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://hasanibnarif.github.io/pt-br/posts/hugo-coder-wiki/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>http://hasanibnarif.github.io/pt-br/about/</link>
+      <pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://hasanibnarif.github.io/pt-br/about/</guid>
+      <description>Escrito em Go, Hugo é um gerador de sites estáticos de código aberto disponível sobre a licença Apache Licence 2.0. O Hugo suporta TOML, YAML e JSON como arquivos de dados, Markdown e HTML como arquivos de conteúdo, e usa shortcodes para adicionar conteúdos ricos. Outras funcionalidades notaveis são taxonomias, modo multilingual, processamento de imagens, formatos de saída customizaveis, minificação de HTML/CSS/JS e suporte a fluxos SASS/SCSS.
+O Hugo faz o uso de vários projetos de código aberto incluíndo:</description>
+    </item>
+    
+    <item>
+      <title>Contato</title>
+      <link>http://hasanibnarif.github.io/pt-br/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://hasanibnarif.github.io/pt-br/contact/</guid>
+      <description>Me siga em @joaoninguem.</description>
+    </item>
+    
+    <item>
+      <title>Projetos</title>
+      <link>http://hasanibnarif.github.io/pt-br/projects/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://hasanibnarif.github.io/pt-br/projects/</guid>
+      <description>Nada para ver aqui.. Circulando!</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Theme on Kazi Hasan Ibn Arif</title>
+    <link>http://hasanibnarif.github.io/series/theme/</link>
+    <description>Recent content in Theme on Kazi Hasan Ibn Arif</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 25 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://hasanibnarif.github.io/series/theme/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mermaid JS support</title>
+      <link>http://hasanibnarif.github.io/posts/mermaid-support/</link>
+      <pubDate>Mon, 25 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://hasanibnarif.github.io/posts/mermaid-support/</guid>
+      <description>If you want to use Mermaid-JS on your website. Provide mermaid as Shortcode in your markdown file.
+flowchart LR A --&gt; B B --&gt; C C --&gt; D D --&gt; B sequenceDiagram participant Alice participant Bob Alice-&gt;&gt;Bob: Hi Bob Bob-&gt;&gt;Alice: Hi Alice Find more example on Mermaid-JS website.</description>
+    </item>
+    
+  </channel>
+</rss>

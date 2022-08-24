@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>markdown on João Ninguém</title>
+    <link>http://hasanibnarif.github.io/pt-br/tags/markdown/</link>
+    <description>Recent content in markdown on João Ninguém</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 11 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="http://hasanibnarif.github.io/pt-br/tags/markdown/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Guia de Sintaxe Markdown</title>
+      <link>http://hasanibnarif.github.io/pt-br/posts/markdown-syntax/</link>
+      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://hasanibnarif.github.io/pt-br/posts/markdown-syntax/</guid>
+      <description>&lt;p&gt;Esse artigo é um exemplo básico para mostrar a sintaxe Markdown que é usada nos arquivos de conteúdo do Hugo. Ele também mostrar como cada elemento básico HTML é estilizado com CSS com os temas do Hugo.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Texto de Exemplo</title>
+      <link>http://hasanibnarif.github.io/pt-br/posts/placeholder-text/</link>
+      <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://hasanibnarif.github.io/pt-br/posts/placeholder-text/</guid>
+      <description>&lt;p&gt;Lorem est tota propiore conpellat pectoribus de pectora summo.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
