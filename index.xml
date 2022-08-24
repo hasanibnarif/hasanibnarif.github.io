@@ -165,15 +165,17 @@ Hello Hello World! Goodbye Goodbye Everybody! Right alighment Link to heading Yo
     </item>
     
     <item>
-      <title>Resume</title>
+      <title></title>
       <link>http://hasanibnarif.github.io/resume/</link>
       <pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate>
       
       <guid>http://hasanibnarif.github.io/resume/</guid>
-      <description>📧 1605034@ugrad.buet.ac.bd | 📞 +880-1521402031
-🔗 Github | 🔗 LinkedIn | 🔗 Research Gate
-Technical Skills Link to heading Language : Java, C, C++, Python Framework : Node, React, OpenGL Database : PostgreSQL, MongoDB Tools: Git, Bash Education Link to heading Bachelor in Computer Science and Engineering Link to heading 2017 - 2021 (Session delayed due to COVID-19 pandemic) Bangladesh University of Engineering and Technology (BUET) Dhaka, Bangladesh
-Higher Secondary in Science Link to heading 2014 - 2016 Chittagong College Chittagong, Bangladesh</description>
+      <description>Download CV as Pdf from here
+RESEARCH INTEREST Link to heading Deep Learning in Medical Imaging Human Computer Interaction Data Mining Computer Graphics High Performance Computing RESEARCH EXPERIENCE Link to heading 1. Generate 3D Bone from DICOM using Deep CNN
+Undergraduate thesis
+Supervised by Dr. Mahmuda Naznin (BUET)
+We proposed a deep CNN based approach that can segment 3D bone from radiology image
+2. Hybrid Deep Learning Model for Bangla Parts of Speech Tagging</description>
     </item>
     
     <item>
