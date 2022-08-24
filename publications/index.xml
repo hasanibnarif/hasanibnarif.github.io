@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Publications on Kazi Hasan</title>
+    <link>http://hasanibnarif.github.io/publications/</link>
+    <description>Recent content in Publications on Kazi Hasan</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 01 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://hasanibnarif.github.io/publications/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Local and Global Feature Based Hybrid Deep Learning Model for Bangla Parts of Speech Tagging</title>
+      <link>http://hasanibnarif.github.io/publications/co-author/</link>
+      <pubDate>Sat, 01 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://hasanibnarif.github.io/publications/co-author/</guid>
+      <description>This is about my first publication.</description>
+    </item>
+    
+  </channel>
+</rss>
