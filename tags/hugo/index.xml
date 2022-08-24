@@ -16,5 +16,14 @@
       <description></description>
     </item>
     
+    <item>
+      <title>Página Externa: Wiki Hugo Coder</title>
+      <link>http://hasanibnarif.github.io/posts/hugo-coder-wiki/</link>
+      <pubDate>Mon, 04 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://hasanibnarif.github.io/posts/hugo-coder-wiki/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>

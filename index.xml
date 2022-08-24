@@ -30,6 +30,15 @@ Hello Hello World! Goodbye Goodbye Everybody! Right alighment Link to heading Yo
     </item>
     
     <item>
+      <title>Guia de Sintaxe Markdown</title>
+      <link>http://hasanibnarif.github.io/posts/markdown-syntax.pt-br/</link>
+      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://hasanibnarif.github.io/posts/markdown-syntax.pt-br/</guid>
+      <description>&lt;p&gt;Esse artigo é um exemplo básico para mostrar a sintaxe Markdown que é usada nos arquivos de conteúdo do Hugo. Ele também mostrar como cada elemento básico HTML é estilizado com CSS com os temas do Hugo.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Markdown Syntax Guide</title>
       <link>http://hasanibnarif.github.io/posts/markdown-syntax/</link>
       <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
@@ -39,12 +48,30 @@ Hello Hello World! Goodbye Goodbye Everybody! Right alighment Link to heading Yo
     </item>
     
     <item>
+      <title>Conteúdo Rico</title>
+      <link>http://hasanibnarif.github.io/posts/rich-content.pt-br/</link>
+      <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://hasanibnarif.github.io/posts/rich-content.pt-br/</guid>
+      <description>&lt;p&gt;O Hugo vem com vários &lt;a href=&#34;https://gohugo.io/content-management/shortcodes/#use-hugos-built-in-shortcodes&#34;&gt;Shortcodes Internos&lt;/a&gt; para conteúdo rico, assim como uma &lt;a href=&#34;https://gohugo.io/about/hugo-and-gdpr/&#34;&gt;Configuração de Privacidade&lt;/a&gt; e uma gama de Shortcodes simples que permitem embutir versões estáticas e sem JS de várias de redes sociais.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Rich Content</title>
       <link>http://hasanibnarif.github.io/posts/rich-content/</link>
       <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
       
       <guid>http://hasanibnarif.github.io/posts/rich-content/</guid>
       <description>&lt;p&gt;Hugo ships with several &lt;a href=&#34;https://gohugo.io/content-management/shortcodes/#use-hugos-built-in-shortcodes&#34;&gt;Built-in Shortcodes&lt;/a&gt; for rich content, along with a &lt;a href=&#34;https://gohugo.io/about/hugo-and-gdpr/&#34;&gt;Privacy Config&lt;/a&gt; and a set of Simple Shortcodes that enable static and no-JS versions of various social media embeds.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Mais Conteúdo Rico</title>
+      <link>http://hasanibnarif.github.io/posts/more-rich-content.pt-br/</link>
+      <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://hasanibnarif.github.io/posts/more-rich-content.pt-br/</guid>
+      <description>&lt;p&gt;O Hugo Coder proporciona alguns Shortcodes Customizados.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -66,6 +93,24 @@ Hello Hello World! Goodbye Goodbye Everybody! Right alighment Link to heading Yo
     </item>
     
     <item>
+      <title>Texto de Exemplo</title>
+      <link>http://hasanibnarif.github.io/posts/placeholder-text.pt-br/</link>
+      <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://hasanibnarif.github.io/posts/placeholder-text.pt-br/</guid>
+      <description>&lt;p&gt;Lorem est tota propiore conpellat pectoribus de pectora summo.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Configuração de Equações Matemáticas</title>
+      <link>http://hasanibnarif.github.io/posts/math-typesetting.pt-br/</link>
+      <pubDate>Fri, 08 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://hasanibnarif.github.io/posts/math-typesetting.pt-br/</guid>
+      <description>&lt;p&gt;Em um projeto Hugo as Notações Matemáticas podem ser usadas com a ajuda de bibliotecas JavaScript de terceiros.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Math Typesetting</title>
       <link>http://hasanibnarif.github.io/posts/math-typesetting/</link>
       <pubDate>Fri, 08 Mar 2019 00:00:00 +0000</pubDate>
@@ -84,6 +129,15 @@ Hello Hello World! Goodbye Goodbye Everybody! Right alighment Link to heading Yo
     </item>
     
     <item>
+      <title>Suporte a Emojis</title>
+      <link>http://hasanibnarif.github.io/posts/emoji-support.pt-br/</link>
+      <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://hasanibnarif.github.io/posts/emoji-support.pt-br/</guid>
+      <description>&lt;p&gt;Emojis podem ser ativados em um projeto Hugo de diversar formas.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>External Page: Hugo Coder Wiki</title>
       <link>http://hasanibnarif.github.io/posts/hugo-coder-wiki/</link>
       <pubDate>Mon, 04 Mar 2019 00:00:00 +0000</pubDate>
@@ -93,14 +147,24 @@ Hello Hello World! Goodbye Goodbye Everybody! Right alighment Link to heading Yo
     </item>
     
     <item>
-      <title>About</title>
-      <link>http://hasanibnarif.github.io/about/</link>
+      <title>Página Externa: Wiki Hugo Coder</title>
+      <link>http://hasanibnarif.github.io/posts/hugo-coder-wiki/</link>
+      <pubDate>Mon, 04 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://hasanibnarif.github.io/posts/hugo-coder-wiki/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Resume</title>
+      <link>http://hasanibnarif.github.io/resume/</link>
       <pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://hasanibnarif.github.io/about/</guid>
-      <description>Written in Go, Hugo is an open source static site generator available under the Apache Licence 2.0. Hugo supports TOML, YAML and JSON data file types, Markdown and HTML content files and uses shortcodes to add rich content. Other notable features are taxonomies, multilingual mode, image processing, custom output formats, HTML/CSS/JS minification and support for Sass SCSS workflows.
-Hugo makes use of a variety of open source projects including:
-https://github.com/yuin/goldmark https://github.</description>
+      <guid>http://hasanibnarif.github.io/resume/</guid>
+      <description>📧 1605034@ugrad.buet.ac.bd | 📞 +880-1521402031
+🔗 Github | 🔗 LinkedIn | 🔗 Research Gate
+Technical Skills Link to heading Language : Java, C, C++, Python Framework : Node, React, OpenGL Database : PostgreSQL, MongoDB Tools: Git, Bash Education Link to heading Bachelor in Computer Science and Engineering Link to heading 2017 - 2021 (Session delayed due to COVID-19 pandemic) Bangladesh University of Engineering and Technology (BUET) Dhaka, Bangladesh
+Higher Secondary in Science Link to heading 2014 - 2016 Chittagong College Chittagong, Bangladesh</description>
     </item>
     
     <item>
