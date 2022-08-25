@@ -171,7 +171,7 @@ Hello Hello World! Goodbye Goodbye Everybody! Right alighment Link to heading Yo
       
       <guid>http://hasanibnarif.github.io/resume/</guid>
       <description>Download CV as Pdf from here
-RESEARCH INTEREST Link to heading Deep Learning in Medical Imaging Human Computer Interaction Data Mining Computer Graphics High Performance Computing RESEARCH EXPERIENCE Link to heading 1. Generate 3D Bone from DICOM using Deep CNN
+RESEARCH INTEREST Link to heading Deep Learning in Medical Imaging Natural Language Processing Human Computer Interaction Computer Graphics Data Mining High Performance Computing RESEARCH EXPERIENCE Link to heading 1. Generate 3D Bone from DICOM using Deep CNN
 Undergraduate thesis
 Supervised by Dr. Mahmuda Naznin (BUET)
 We proposed a deep CNN based approach that can segment 3D bone from radiology image
