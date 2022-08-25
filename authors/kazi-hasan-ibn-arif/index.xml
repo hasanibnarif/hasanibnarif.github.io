@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Kazi Hasan Ibn Arif on Kazi Hasan</title>
+    <link>http://hasanibnarif.github.io/authors/kazi-hasan-ibn-arif/</link>
+    <description>Recent content in Kazi Hasan Ibn Arif on Kazi Hasan</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 22 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://hasanibnarif.github.io/authors/kazi-hasan-ibn-arif/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Local and Global Feature Based Hybrid Deep Learning Model for Bangla Parts of Speech Tagging</title>
+      <link>http://hasanibnarif.github.io/publications/first/</link>
+      <pubDate>Sat, 22 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://hasanibnarif.github.io/publications/first/</guid>
+      <description>Read more : DOI
+Abstract
+Parts of Speech (pos) tagging corresponds to techniques of tagging accurate pos tags of each word of a sentence. It is a pivotal and indispensable part of sentiment analysis, synthesizing text to speech, analyzing textual data and many more Natural Language Processing (NLP) tasks. Though there are many researches done in the field of languages like English, Chinese, etc. it is still comparatively unexplored for Bangla.</description>
+    </item>
+    
+  </channel>
+</rss>

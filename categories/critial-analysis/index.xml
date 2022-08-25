@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Kazi Hasan</title>
-    <link>http://hasanibnarif.github.io/posts/</link>
-    <description>Recent content in Posts on Kazi Hasan</description>
+    <title>Critial Analysis on Kazi Hasan</title>
+    <link>http://hasanibnarif.github.io/categories/critial-analysis/</link>
+    <description>Recent content in Critial Analysis on Kazi Hasan</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 25 Jun 2022 21:55:45 +0600</lastBuildDate><atom:link href="http://hasanibnarif.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 25 Jun 2022 21:55:45 +0600</lastBuildDate><atom:link href="http://hasanibnarif.github.io/categories/critial-analysis/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Critical Analysis on Batch Normalization paper</title>
       <link>http://hasanibnarif.github.io/posts/one/</link>

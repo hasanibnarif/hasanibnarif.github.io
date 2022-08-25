@@ -2,139 +2,61 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://hasanibnarif.github.io/series/hugo/</loc>
-    <lastmod>2022-07-25T00:00:00+00:00</lastmod>
+    <loc>http://hasanibnarif.github.io/authors/</loc>
+    <lastmod>2022-06-25T21:55:45+06:00</lastmod>
   </url><url>
-    <loc>http://hasanibnarif.github.io/</loc>
-    <lastmod>2022-07-25T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://hasanibnarif.github.io/posts/mermaid-support/</loc>
-    <lastmod>2022-07-25T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://hasanibnarif.github.io/posts/</loc>
-    <lastmod>2022-07-25T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://hasanibnarif.github.io/series/</loc>
-    <lastmod>2022-07-25T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://hasanibnarif.github.io/series/theme/</loc>
-    <lastmod>2022-07-25T00:00:00+00:00</lastmod>
+    <loc>http://hasanibnarif.github.io/tags/batch-normalization/</loc>
+    <lastmod>2022-06-25T21:55:45+06:00</lastmod>
   </url><url>
     <loc>http://hasanibnarif.github.io/categories/</loc>
-    <lastmod>2022-05-15T00:00:00+00:00</lastmod>
+    <lastmod>2022-06-25T21:55:45+06:00</lastmod>
   </url><url>
-    <loc>http://hasanibnarif.github.io/tags/css/</loc>
-    <lastmod>2022-05-15T00:00:00+00:00</lastmod>
+    <loc>http://hasanibnarif.github.io/categories/critial-analysis/</loc>
+    <lastmod>2022-06-25T21:55:45+06:00</lastmod>
   </url><url>
-    <loc>http://hasanibnarif.github.io/tags/html/</loc>
-    <lastmod>2022-05-15T00:00:00+00:00</lastmod>
+    <loc>http://hasanibnarif.github.io/posts/one/</loc>
+    <lastmod>2022-06-25T21:55:45+06:00</lastmod>
   </url><url>
-    <loc>http://hasanibnarif.github.io/posts/html-and-css-only-tabs/</loc>
-    <lastmod>2022-05-15T00:00:00+00:00</lastmod>
+    <loc>http://hasanibnarif.github.io/tags/deep-learning/</loc>
+    <lastmod>2022-06-25T21:55:45+06:00</lastmod>
   </url><url>
-    <loc>http://hasanibnarif.github.io/tags/markdown/</loc>
-    <lastmod>2022-05-15T00:00:00+00:00</lastmod>
+    <loc>http://hasanibnarif.github.io/authors/kazi-hasan/</loc>
+    <lastmod>2022-06-25T21:55:45+06:00</lastmod>
   </url><url>
-    <loc>http://hasanibnarif.github.io/categories/syntax/</loc>
-    <lastmod>2022-05-15T00:00:00+00:00</lastmod>
+    <loc>http://hasanibnarif.github.io/</loc>
+    <lastmod>2022-06-25T21:55:45+06:00</lastmod>
+  </url><url>
+    <loc>http://hasanibnarif.github.io/posts/</loc>
+    <lastmod>2022-06-25T21:55:45+06:00</lastmod>
   </url><url>
     <loc>http://hasanibnarif.github.io/tags/</loc>
-    <lastmod>2022-05-15T00:00:00+00:00</lastmod>
+    <lastmod>2022-06-25T21:55:45+06:00</lastmod>
   </url><url>
-    <loc>http://hasanibnarif.github.io/categories/themes/</loc>
-    <lastmod>2022-05-15T00:00:00+00:00</lastmod>
+    <loc>http://hasanibnarif.github.io/tags/3d-reconstruction/</loc>
+    <lastmod>2022-05-15T23:30:04+06:00</lastmod>
   </url><url>
-    <loc>http://hasanibnarif.github.io/series/themes-guide/</loc>
-    <lastmod>2022-05-15T00:00:00+00:00</lastmod>
+    <loc>http://hasanibnarif.github.io/tags/bone/</loc>
+    <lastmod>2022-05-15T23:30:04+06:00</lastmod>
   </url><url>
-    <loc>http://hasanibnarif.github.io/publications/co-author/</loc>
-    <lastmod>2021-05-01T00:00:00+00:00</lastmod>
+    <loc>http://hasanibnarif.github.io/publications/two/</loc>
+    <lastmod>2022-05-15T23:30:04+06:00</lastmod>
   </url><url>
     <loc>http://hasanibnarif.github.io/publications/</loc>
-    <lastmod>2021-05-01T00:00:00+00:00</lastmod>
+    <lastmod>2022-05-15T23:30:04+06:00</lastmod>
   </url><url>
-    <loc>http://hasanibnarif.github.io/posts/markdown-syntax.pt-br/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
+    <loc>http://hasanibnarif.github.io/authors/kazi-hasan-ibn-arif/</loc>
+    <lastmod>2021-05-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://hasanibnarif.github.io/series/guia-do-thema/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://hasanibnarif.github.io/posts/markdown-syntax/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://hasanibnarif.github.io/categories/sintaxe/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://hasanibnarif.github.io/categories/temas/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://hasanibnarif.github.io/posts/rich-content.pt-br/</loc>
-    <lastmod>2019-03-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://hasanibnarif.github.io/tags/privacy/</loc>
-    <lastmod>2019-03-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://hasanibnarif.github.io/posts/rich-content/</loc>
-    <lastmod>2019-03-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://hasanibnarif.github.io/tags/shortcodes/</loc>
-    <lastmod>2019-03-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://hasanibnarif.github.io/posts/more-rich-content.pt-br/</loc>
-    <lastmod>2019-03-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://hasanibnarif.github.io/posts/more-rich-content/</loc>
-    <lastmod>2019-03-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://hasanibnarif.github.io/posts/placeholder-text/</loc>
-    <lastmod>2019-03-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://hasanibnarif.github.io/tags/text/</loc>
-    <lastmod>2019-03-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://hasanibnarif.github.io/posts/placeholder-text.pt-br/</loc>
-    <lastmod>2019-03-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://hasanibnarif.github.io/posts/math-typesetting.pt-br/</loc>
-    <lastmod>2019-03-08T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://hasanibnarif.github.io/posts/math-typesetting/</loc>
-    <lastmod>2019-03-08T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://hasanibnarif.github.io/tags/emoji/</loc>
-    <lastmod>2019-03-05T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://hasanibnarif.github.io/posts/emoji-support/</loc>
-    <lastmod>2019-03-05T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://hasanibnarif.github.io/posts/emoji-support.pt-br/</loc>
-    <lastmod>2019-03-05T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://hasanibnarif.github.io/tags/development/</loc>
-    <lastmod>2019-03-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://hasanibnarif.github.io/categories/development/</loc>
-    <lastmod>2019-03-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://hasanibnarif.github.io/posts/hugo-coder-wiki/</loc>
-    <lastmod>2019-03-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://hasanibnarif.github.io/tags/hugo/</loc>
-    <lastmod>2019-03-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://hasanibnarif.github.io/posts/hugo-coder-wiki/</loc>
-    <lastmod>2019-03-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://hasanibnarif.github.io/tags/themes/</loc>
-    <lastmod>2019-03-04T00:00:00+00:00</lastmod>
+    <loc>http://hasanibnarif.github.io/publications/first/</loc>
+    <lastmod>2021-05-22T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://hasanibnarif.github.io/resume/</loc>
     <lastmod>2019-02-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://hasanibnarif.github.io/authors/</loc>
-  </url><url>
     <loc>http://hasanibnarif.github.io/contact/</loc>
   </url><url>
     <loc>http://hasanibnarif.github.io/projects/</loc>
+  </url><url>
+    <loc>http://hasanibnarif.github.io/series/</loc>
   </url>
 </urlset>

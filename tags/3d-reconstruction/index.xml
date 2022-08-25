@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>3D reconstruction on Kazi Hasan</title>
+    <link>http://hasanibnarif.github.io/tags/3d-reconstruction/</link>
+    <description>Recent content in 3D reconstruction on Kazi Hasan</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 15 May 2022 23:30:04 +0600</lastBuildDate><atom:link href="http://hasanibnarif.github.io/tags/3d-reconstruction/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Generate 3D Bone from DICOM using Deep CNN</title>
+      <link>http://hasanibnarif.github.io/publications/two/</link>
+      <pubDate>Sun, 15 May 2022 23:30:04 +0600</pubDate>
+      
+      <guid>http://hasanibnarif.github.io/publications/two/</guid>
+      <description>ABSTRACT
+Computed tomography (CT) scan or magnetic resonance imaging (MRI) have been proposed as methods to measure bone quality and assess fracture risk. However, manual segmentation of MRI/CT is time-consuming which limits its use in clinical practice. It is also costly at the same time. Moreover, the traditional methods that are available to this date are not robust. Our thesis goal is to present an automatic femur segmentation method based on deep Con- volutional Neural Networks (CNNs).</description>
+    </item>
+    
+  </channel>
+</rss>
