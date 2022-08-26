@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>
+  Critical Analysis on Deep Residual Learning for Image Recognition · Kazi Hasan
+</title>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests; block-all-mixed-content; default-src 'self'; child-src 'self'; font-src 'self' https://fonts.gstatic.com https://cdn.jsdelivr.net/; form-action 'self'; frame-src 'self'; img-src 'self'; object-src 'none'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com/ https://cdn.jsdelivr.net/; script-src 'self' 'unsafe-inline' https://www.google-analytics.com https://cdn.jsdelivr.net/; prefetch-src 'self'; connect-src 'self' https://www.google-analytics.com;">
+
+
+
+
+<meta name="author" content="Kazi Hasan Ibn Arif">
+<meta name="description" content="Paper Link: here
+Problem Statement Link to heading Introduction
+The more deeper a deep neural network is, the more computational complexity is added to the training process. For example, a training a deep neural network may face exploding or vanishing gradiant problem, which result in compromising accuracy of the model. This paper introduced a new technique to combat the problem of training a deep neural network. They present a residual learning framework to ease the training of networks that are substantially deeper than those used previously.">
+<meta name="keywords" content="blog,developer,personal,machine,Learning,Engineer,phd,student">
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Critical Analysis on Deep Residual Learning for Image Recognition"/>
+<meta name="twitter:description" content="Paper Link: here
+Problem Statement Link to heading Introduction
+The more deeper a deep neural network is, the more computational complexity is added to the training process. For example, a training a deep neural network may face exploding or vanishing gradiant problem, which result in compromising accuracy of the model. This paper introduced a new technique to combat the problem of training a deep neural network. They present a residual learning framework to ease the training of networks that are substantially deeper than those used previously."/>
+
+<meta property="og:title" content="Critical Analysis on Deep Residual Learning for Image Recognition" />
+<meta property="og:description" content="Paper Link: here
+Problem Statement Link to heading Introduction
+The more deeper a deep neural network is, the more computational complexity is added to the training process. For example, a training a deep neural network may face exploding or vanishing gradiant problem, which result in compromising accuracy of the model. This paper introduced a new technique to combat the problem of training a deep neural network. They present a residual learning framework to ease the training of networks that are substantially deeper than those used previously." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://hasanibnarif.github.io/posts/two/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-08-15T22:01:23+06:00" />
+<meta property="article:modified_time" content="2022-08-15T22:01:23+06:00" />
+
+
+
+
+
+<link rel="canonical" href="http://hasanibnarif.github.io/posts/two/">
+
+
+<link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/css/coder.min.c4d7e93a158eda5a65b3df343745d2092a0a1e2170feeec909b8a89443903c6a.css" integrity="sha256-xNfpOhWO2lpls980N0XSCSoKHiFw/u7JCbiolEOQPGo=" crossorigin="anonymous" media="screen" />
+
+
+
+
+
+
+  
+    
+    
+    <link rel="stylesheet" href="/css/coder-dark.min.39e41a7f16bdf8cb16e43cae7d714fa1016f1d2d2898a5b3f27f42c9979204e2.css" integrity="sha256-OeQafxa9&#43;MsW5DyufXFPoQFvHS0omKWz8n9CyZeSBOI=" crossorigin="anonymous" media="screen" />
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+<meta name="generator" content="Hugo 0.100.1" />
+
+
+
+
+
+  </head>
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/">
+      Kazi Hasan
+    </a>
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/resume/">Resume</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/publications/">Publications</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/posts/">Blog</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/projects/">Projects</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/contact/">Contact</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="http://hasanibnarif.github.io/posts/two/">
+              Critical Analysis on Deep Residual Learning for Image Recognition
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <time datetime="2022-08-15T22:01:23&#43;06:00">
+                August 15, 2022
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              6-minute read
+            </span>
+          </div>
+          
+          
+          
+        </div>
+      </header>
+
+      <div>
+        
+        <p><strong>Paper Link:</strong> <a href="https://arxiv.org/abs/1512.03385">here</a></p>
+<h3 id="problem-statement">
+  <strong>Problem Statement</strong>
+  <a class="heading-link" href="#problem-statement">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p><strong>Introduction</strong></p>
+<p>The more deeper a deep neural network is, the more computational complexity is added to the training process. For example, a training a deep neural network may face exploding or vanishing gradiant problem, which result in compromising accuracy of the model. This paper introduced a new technique to combat the problem of training a deep neural network. They present a residual learning framework to ease the training of networks that are substantially deeper than those used previously. Also, the paper shows imperical proof of the fact that this ResNet framework works better than the-then state-of-the-art for few publicly available datasets like CIFAR-10 and COCO.</p>
+<p><strong>Mathematical formulation</strong></p>
+<p>Suppose an input to a ConV layer is ‘x’ and the output of the block is denoted by $F(x)$, which is the input to the next layer. But instead of sending F(x) as input to the next layer, this paper suggests to send $F(x) + x$ as input to the next layer. This additional connection is called ‘shortcut connection’ or ‘skip connection’ which works as an identity mapper.</p>
+<h3 id="current-approach">
+  <strong>Current Approach</strong>
+  <a class="heading-link" href="#current-approach">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p><strong>Contributions of the current approach</strong></p>
+<p>Currenlty, to train a deep neural network, for increasing efficiency, the only available solution is to simply add deeper layers. The idea behind using a deeper layer is that it should not perform worse than its shallow counterparts. When deeper networks are able to start converging, a degradation **problem has been introduced: with the network depth increasing, accuracy gets saturated and then degrades rapidly. And this is not caused by overfitting. Currently this problem has been largely addressed by normalized initialization and using intermediate normalization layers, which enable networks with tens of layers to start converging for stochastic gradient descent (SGD) with backpropagation.</p>
+<p><strong>Architecture Diagram</strong></p>
+<p>The network architecture of ResNet has following componets.</p>
+<ol>
+<li>
+<p>Plain Network.</p>
+<p>This is simply inspired by VGG network architectures. The convolutional layers mostly have 3×3 filters and follow two simple design rules:</p>
+<p>(i) for the same output feature map size, the layers have the same number of filters;</p>
+<p>(ii) if the feature map size is halved, the number of filters is doubled so as to preserve the time complexity per layer.</p>
+</li>
+<li>
+<p>Residual Network.</p>
+<p>This paper adopts residual learning to every few stacked layers. A building block is shown here. The operation $F(x) + x$ is performed by a shortcut connection and element-wise addition. The dimensions of $x$ and $F(x)$ must be equal in order to add the up.</p>
+</li>
+</ol>
+<p><img src="/Deep%20Residual%20Learning%20for%20Image%20Recognition%207238645fafe448a496f17199be9daf31/Untitled.png" alt="Untitled"></p>
+<p><img src="/Deep%20Residual%20Learning%20for%20Image%20Recognition%207238645fafe448a496f17199be9daf31/Untitled%201.png" alt="Untitled"></p>
+<p><strong>Algorithm</strong></p>
+<p>Initially, we have our image being passed through a 7 _ 7 filter with a stride of two with 64 channels. We can imagine that if we had an image of 300 _ 300 _ 64 then after the first operation, it would have been changed to 150 _ 150 * 64, after applying the formula,</p>
+<ul>
+<li><strong>Input:</strong> n X n</li>
+<li><strong>Padding:</strong> p</li>
+<li><strong>Filter size:</strong> f X f</li>
+<li><strong>Output:</strong> ((n+2p-f)/s+1) X ((n+2p-f)/s+1)</li>
+</ul>
+<p>Next, we perform a 3 _ 3 max-pooling with stride 2 and we end up 75 _ 75 _ 64 as the output pooling layer. Then we can see there is a 3 _ 3 filter with 64 channels as convolution operation is being performed two times, but these two layers are skipped connections as they are a residual block. The same occurs again two times and we use the skipped connections to form the residual block. Now, we can see there is 128 instead of 64 and we cannot directly pass input to the activation function output from the 128 layers because of dimension mismatch. In such cases, we apply convolutional operation or padded weights to make dimension equal. In other cases, we have an identity block and the connections are direct from input and appended to the output.</p>
+<p><strong>Mathematical formulation</strong></p>
+<p>The equation for a building block is -</p>
+<p>$y = F (x, {W_i }) + x$.</p>
+<p>Here $x$ and $y$ are the input and output vectors of the layers considered.</p>
+<p>The function $F (x, {W_i })$ represents the residual mapping to be learned.</p>
+<p>This paper can perform a linear projection $W_s$ by the shortcut connections to match the dimensions.</p>
+<p>So, finally we get this.</p>
+<p>$y = F (x, {W_i }) + W_s x$</p>
+<h3 id="experimentation-setup">
+  <strong>Experimentation Setup</strong>
+  <a class="heading-link" href="#experimentation-setup">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p><strong>Datsets</strong></p>
+<p>Different types of datasets are used to test and analyze this architectures. They are -</p>
+<ol>
+<li>Testing classification with ImageNet</li>
+<li>Testing object detection with PASCAL and MS COCO datasets.</li>
+<li>CIFAR-10</li>
+</ol>
+<hr>
+<h3 id="results">
+  <strong>Results</strong>
+  <a class="heading-link" href="#results">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p><strong>Results on dataset</strong></p>
+<ol>
+<li>ImageNet results: Top-1 error (%, 10-crop testing) on ImageNet validation. Here the ResNets have no extra parameter compared to their plain counterparts.</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>#layers</th>
+<th>plain</th>
+<th>ResNet</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>18 layers</td>
+<td>27.94</td>
+<td>27.88</td>
+</tr>
+<tr>
+<td>34 layers</td>
+<td>28.54</td>
+<td>25.03</td>
+</tr>
+</tbody>
+</table>
+<p><img src="/Deep%20Residual%20Learning%20for%20Image%20Recognition%207238645fafe448a496f17199be9daf31/Untitled%202.png" alt="Thin curves denote training error, and bold curves denote validation error of the center crops. Left: plain networks of 18 and 34 layers. Right: ResNets of 18 and 34 layers. In this plot, the residual networks have no extra parameter compared to their plain counterparts."></p>
+<p>Thin curves denote training error, and bold curves denote validation error of the center crops. Left: plain networks of 18 and 34 layers. Right: ResNets of 18 and 34 layers. In this plot, the residual networks have no extra parameter compared to their plain counterparts.</p>
+<p><strong>Comparison of current approach results with previous</strong></p>
+<p>This paper compares with the previous best single-model results. The baseline 34-layer ResNets have achieved very good accuracy.</p>
+<p><img src="/Deep%20Residual%20Learning%20for%20Image%20Recognition%207238645fafe448a496f17199be9daf31/Untitled%203.png" alt="Error rates (%) of single-model results on the ImageNet validation set with oder state of the arts"></p>
+<p>Error rates (%) of <strong>single-model</strong> results on the ImageNet validation set with oder state of the arts</p>
+<p><strong>Why the current approach is better than the previous approach</strong></p>
+<p>Deep ResNets are built by stacking residual blocks on top of one another and go as long as hundred layers per network, efficiently learning all the parameters from early activations deeper in the network. As the next layer get the output from the previous layer as well as the input, it have a better understanding of the input. On the other hand, during the backpropagation, the value of gradiants could not get too much small which results in vanishing gradiant problem. As, the gradiant is passed in two differt paths: through the conv blocks and through the skip connections.</p>
+<h3 id="conclusion">
+  <strong>Conclusion</strong>
+  <a class="heading-link" href="#conclusion">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p><strong>Key takeways</strong></p>
+<ol>
+<li>Adding more layers to deep neural network does not make the model more effective at some points.</li>
+<li>Skip connection can combat vanishing gradiant problem by passing gradiant to previous layers.</li>
+<li>ResNet aims to solve the degradation problem by introducing residual network framework which forces the network to learn residuals.</li>
+</ol>
+<p><strong>Limitation of the current approach</strong></p>
+<p>Although ResNet has proven powerful in many applications, one major drawback is that deeper network usually requires weeks for training, making it practically infeasible in real-world applications. Also, it increased complexity of architecture.</p>
+<p>Finally, adding skip level connections for which we have take into account the dimensionality between the different layers which can become an extra complexity.</p>
+<p><strong>Suggestions</strong></p>
+<p>As it takes huge amout of time to train a ResNet, we can apply transfer learning techniques and include pretrainder model as a part of it. Which will make the training process faster.</p>
+
+      </div>
+
+
+      <footer>
+        
+
+
+        
+        
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+      2019 -
+    
+    2022
+     Kazi Hasan Ibn Arif 
+    ·
+    
+    Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="/js/coder.min.f411a1043e37c7c14dfb03f4d94d60d9ee69cfa413b16d0fd4f28695babb82bb.js" integrity="sha256-9BGhBD43x8FN&#43;wP02U1g2e5pz6QTsW0P1PKGlbq7grs="></script>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+
+</html>

@@ -6,7 +6,18 @@
     <description>Recent content in Posts on Kazi Hasan</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 25 Jun 2022 21:55:45 +0600</lastBuildDate><atom:link href="http://hasanibnarif.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 15 Aug 2022 22:01:23 +0600</lastBuildDate><atom:link href="http://hasanibnarif.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Critical Analysis on Deep Residual Learning for Image Recognition</title>
+      <link>http://hasanibnarif.github.io/posts/two/</link>
+      <pubDate>Mon, 15 Aug 2022 22:01:23 +0600</pubDate>
+      
+      <guid>http://hasanibnarif.github.io/posts/two/</guid>
+      <description>Paper Link: here
+Problem Statement Link to heading Introduction
+The more deeper a deep neural network is, the more computational complexity is added to the training process. For example, a training a deep neural network may face exploding or vanishing gradiant problem, which result in compromising accuracy of the model. This paper introduced a new technique to combat the problem of training a deep neural network. They present a residual learning framework to ease the training of networks that are substantially deeper than those used previously.</description>
+    </item>
+    
     <item>
       <title>Critical Analysis on Batch Normalization paper</title>
       <link>http://hasanibnarif.github.io/posts/one/</link>
