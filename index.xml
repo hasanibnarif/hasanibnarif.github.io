@@ -8,6 +8,15 @@
     <language>en</language>
     <lastBuildDate>Mon, 15 Aug 2022 22:01:23 +0600</lastBuildDate><atom:link href="http://hasanibnarif.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title></title>
+      <link>http://hasanibnarif.github.io/resumepdf/</link>
+      <pubDate>Sat, 27 Aug 2022 22:50:00 +0600</pubDate>
+      
+      <guid>http://hasanibnarif.github.io/resumepdf/</guid>
+      <description> Previous Next &amp;nbsp; &amp;nbsp; Page: / </description>
+    </item>
+    
+    <item>
       <title>Critical Analysis on Deep Residual Learning for Image Recognition</title>
       <link>http://hasanibnarif.github.io/posts/two/</link>
       <pubDate>Mon, 15 Aug 2022 22:01:23 +0600</pubDate>
@@ -55,8 +64,7 @@ Parts of Speech (pos) tagging corresponds to techniques of tagging accurate pos 
       <pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate>
       
       <guid>http://hasanibnarif.github.io/resume/</guid>
-      <description>Download CV as Pdf from here
-RESEARCH INTEREST Link to heading Deep Learning Medical Computer Vision 3D Imaging in Radiolog Human Computer Interaction High Performance Computing RESEARCH EXPERIENCE Link to heading 1. Generate 3D Bone from DICOM using Deep CNN
+      <description>Download CV as Pdf from Here Link to heading RESEARCH INTEREST Link to heading Deep Learning Medical Computer Vision 3D Imaging in Radiolog Human Computer Interaction High Performance Computing RESEARCH EXPERIENCE Link to heading 1. Generate 3D Bone from DICOM using Deep CNN
 Undergraduate thesis
 Supervised by Dr. Mahmuda Naznin (BUET)
 We proposed a deep CNN based approach that can segment 3D bone from radiology image
