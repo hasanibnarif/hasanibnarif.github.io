@@ -2,9 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://hasanibnarif.github.io/resumepdf/</loc>
-    <lastmod>2022-08-27T22:50:00+06:00</lastmod>
-  </url><url>
     <loc>http://hasanibnarif.github.io/posts/two/</loc>
     <lastmod>2022-08-15T22:01:23+06:00</lastmod>
   </url><url>
@@ -56,8 +53,8 @@
     <loc>http://hasanibnarif.github.io/publications/first/</loc>
     <lastmod>2021-05-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://hasanibnarif.github.io/resume/</loc>
-    <lastmod>2019-02-28T00:00:00+00:00</lastmod>
+    <loc>http://hasanibnarif.github.io/cv/</loc>
+    <priority>0</priority>
   </url><url>
     <loc>http://hasanibnarif.github.io/contact/</loc>
   </url><url>
