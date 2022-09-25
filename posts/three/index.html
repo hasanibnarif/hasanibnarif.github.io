@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>
+  CONTINUOUS CONTROL WITH DEEP REINFORCEMENT LEARNING · Kazi Hasan
+</title>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests; block-all-mixed-content; default-src 'self'; child-src 'self'; font-src 'self' https://fonts.gstatic.com https://cdn.jsdelivr.net/; form-action 'self'; frame-src 'self'; img-src 'self'; object-src 'none'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com/ https://cdn.jsdelivr.net/; script-src 'self' 'unsafe-inline' https://www.google-analytics.com https://cdn.jsdelivr.net/; prefetch-src 'self'; connect-src 'self' https://www.google-analytics.com;">
+
+
+
+
+<meta name="author" content="Kazi Hasan Ibn Arif">
+<meta name="description" content="Paper Link: https://arxiv.org/pdf/1509.02971.pdf
+Problem Statement Link to heading DQN was able to solve problems in high-dimensional observation spaces, but action spaces neeeded to be discrete and low-dimensional because each step optimizes over state values. This makes DQN not useful for robotic walking for example. The paper relies on Deep Reinforcement Learning to find multiple coupling action and observation space mappings simultaneously. Physical control task as mentioned have continuous, high-dimensional action spaces.">
+<meta name="keywords" content="blog,developer,personal,machine,Learning,Engineer,phd,student">
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="CONTINUOUS CONTROL WITH DEEP REINFORCEMENT LEARNING"/>
+<meta name="twitter:description" content="Paper Link: https://arxiv.org/pdf/1509.02971.pdf
+Problem Statement Link to heading DQN was able to solve problems in high-dimensional observation spaces, but action spaces neeeded to be discrete and low-dimensional because each step optimizes over state values. This makes DQN not useful for robotic walking for example. The paper relies on Deep Reinforcement Learning to find multiple coupling action and observation space mappings simultaneously. Physical control task as mentioned have continuous, high-dimensional action spaces."/>
+
+<meta property="og:title" content="CONTINUOUS CONTROL WITH DEEP REINFORCEMENT LEARNING" />
+<meta property="og:description" content="Paper Link: https://arxiv.org/pdf/1509.02971.pdf
+Problem Statement Link to heading DQN was able to solve problems in high-dimensional observation spaces, but action spaces neeeded to be discrete and low-dimensional because each step optimizes over state values. This makes DQN not useful for robotic walking for example. The paper relies on Deep Reinforcement Learning to find multiple coupling action and observation space mappings simultaneously. Physical control task as mentioned have continuous, high-dimensional action spaces." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://hasanibnarif.github.io/posts/three/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-09-25T17:25:50+06:00" />
+<meta property="article:modified_time" content="2022-09-25T17:25:50+06:00" />
+
+
+
+
+
+<link rel="canonical" href="http://hasanibnarif.github.io/posts/three/">
+
+
+<link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/css/coder.min.c4d7e93a158eda5a65b3df343745d2092a0a1e2170feeec909b8a89443903c6a.css" integrity="sha256-xNfpOhWO2lpls980N0XSCSoKHiFw/u7JCbiolEOQPGo=" crossorigin="anonymous" media="screen" />
+
+
+
+
+
+
+  
+    
+    
+    <link rel="stylesheet" href="/css/coder-dark.min.39e41a7f16bdf8cb16e43cae7d714fa1016f1d2d2898a5b3f27f42c9979204e2.css" integrity="sha256-OeQafxa9&#43;MsW5DyufXFPoQFvHS0omKWz8n9CyZeSBOI=" crossorigin="anonymous" media="screen" />
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+<meta name="generator" content="Hugo 0.100.1" />
+
+
+
+
+
+  </head>
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/">
+      Kazi Hasan
+    </a>
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/cv/">CV</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/publications/">Publications</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/posts/">Blog</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/projects/">Projects</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/contact/">Contact</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="http://hasanibnarif.github.io/posts/three/">
+              CONTINUOUS CONTROL WITH DEEP REINFORCEMENT LEARNING
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <time datetime="2022-09-25T17:25:50&#43;06:00">
+                September 25, 2022
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              6-minute read
+            </span>
+          </div>
+          
+          
+          
+        </div>
+      </header>
+
+      <div>
+        
+        <p><strong>Paper Link:</strong> <a href="https://arxiv.org/pdf/1509.02971.pdf">https://arxiv.org/pdf/1509.02971.pdf</a></p>
+<h3 id="problem-statement">
+  <strong>Problem Statement</strong>
+  <a class="heading-link" href="#problem-statement">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>DQN was able to solve problems in high-dimensional observation spaces, but action spaces neeeded to be discrete and low-dimensional because each step optimizes over state values. This makes DQN not useful for robotic walking for example. The paper relies on Deep Reinforcement Learning to find multiple coupling action and observation space mappings simultaneously. Physical control task as mentioned have continuous, high-dimensional action spaces. If we discretize these actions, they lead to curse of dimensionality and problems with exploration. The paper takes into account these issues and proposes a a model-free, off-policy, actor-critic algorithm that can learn policies in high-dimensional, continuous action spaces. The algorithm is called Deep Deterministic Policy Gradient (DDPG). The algorithm is tested on the Reacher environment from Unity ML-Agents.</p>
+<p>The problem is to find a policy that maximizes the expected return. Action-Critic approach is based on DPG algorithm since Q-learning requires optimizing over action space. It is modified to allow neural network function approximators, capable of learning in large state and action space online.</p>
+<p>Parameterized actor function <em>μ</em>(<em>s</em>|<em>θ</em>) deteministically maps states to a specific ation. That is updated by an gradiant ascent (the opposite of gradiant descent) on performace objective expected reward <em>J</em>(<em>θ</em>). The equation is:</p>
+<p><img src="/DDPG%20981a3201eaa34edaa970258515883d4e/Untitled.png" alt="Untitled"></p>
+<p>This is the policy gradient, the gradient of the policy’s performance. Critic function <strong><em>Q</em>(<em>s</em>, <em>a</em>|<em>θ</em>)</strong> is a value function that estimates the expected return given a state and action. The critic is updated by the TD error <em>δ</em> which is the difference between the target and the current estimate. The target is the reward plus the discounted value of the next state with L2 weight decay.</p>
+<h3 id="current-approach">
+  <strong>Current Approach</strong>
+  <a class="heading-link" href="#current-approach">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>The current approach to combat the problem of DQN is <strong>DDPG</strong>. Brief description of this algorithm is the following:</p>
+<ul>
+<li><strong>Uses replay buffer like DQN:</strong> stores transitions and samples from it randomly. It tracks the experiences it reveive in a buffer and when we train the network, we sample from the buffer. This allows us to learn from experiences that are not sequential. If the buffer is large enough, we can explore the entire state space.</li>
+<li><strong>Directly implements Q learning</strong> with neural networks is unstable in many environments. DDPG uses a target network to stabilize learning.</li>
+<li>DDQN copies actor / critic networks and updates these, then it slowly updates the target networks toward these copies, greatly improving the stability of learning. We have two version of the network. One version is used to update the policies. Then we have a separate pair, that updates immidiately unlike the other one that updates slowly. This is called soft update. That slows down the learning at some extent, but it is more stable.</li>
+<li><strong>Batch Normalization:</strong> Normalization scales of imput by adapting batch normalization, normalizing each dimension across samples in a minibatch to have unit mean and variance. That maintains running average of the mean and varinace for normalization during testing. That allows us to train a more robust framework that is less sensitive to the scale of the input.</li>
+<li><strong>Action-repeats of length 3 :</strong> The reason of using this is, as they are training off a simulated environment, they are skipping three frames at a time and they are using the same action for those three so they pick an action and then they repeat it three times. This is a way to speed up the training process without using any computational resources. This is a trade-off between how often we make decisions and how much we can learn from each decision. They found that 3 is a good number.</li>
+</ul>
+<p><strong>Algorithm:</strong></p>
+<p><img src="/DDPG%20981a3201eaa34edaa970258515883d4e/Untitled%201.png" alt="Untitled"></p>
+<ul>
+<li>Ornstein-Uhlenbeck process: Used this process N + deterministic policy <em>μ</em> as behavioral policy <em>μ</em>′.
+<img src="/DDPG%20981a3201eaa34edaa970258515883d4e/Untitled%202.png" alt="Untitled"></li>
+<li>Models velocity of a Brownian particle with friction (mean reversion increasing with distance from the center). If we have some sort of random walk, like go up or down at random, that is just a noise term. But we have a preference for staying at the mean which in this case is at two to zero, and the further we deviate from that the stronger of a mean reversion we are going to have. So, we tend to go back to the mean we stared from.</li>
+<li>Used temporally correlated noise to explore well in physical environments with momentum. The Ornstein-Uhlenbeck process, that was used as noise, looks like a random walk with memory.</li>
+</ul>
+<h3 id="experimentation-setup">
+  <strong>Experimentation Setup</strong>
+  <a class="heading-link" href="#experimentation-setup">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<ul>
+<li>This section should describe the experimental setup used to evaluate the current approach. This includes the following:</li>
+</ul>
+<p><img src="/DDPG%20981a3201eaa34edaa970258515883d4e/Untitled%203.png" alt="Untitled"></p>
+<ul>
+<li>Tested low-dimensional state description ie. joint angles position and high-dimensional environment renderings. We can see from the figure, Cartpole swing-up, which starts with the cart pole facing down and then we are supposed to swing it up and balance it on the top. Then, in the reaching task, where we need to reach basically with an arm to an object. On the grasping task we take the ball then supposed to move it to the red one and so on. As we can see from the results those all tasks have solved and the algorithm performs very well.</li>
+<li>Used simulated physical environments of varying levels of difficulty to test the algorithm. In all domains but cheetah the action were torques applied to the actuated joints.</li>
+<li>Torcs demonstrates the approach’s generality. Used same network architecture and learning algorithm hyper-parameters but altered the noise process for exploration because of the very different time scales involved.</li>
+</ul>
+<h3 id="results">
+  <strong>Results</strong>
+  <a class="heading-link" href="#results">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<ul>
+<li>The result is estimated Q values verses observed returns. In simple domains, the Q values are quite accurate. In more complex tasks, the Q estimates are less accurate, but can still be used to learn competent policies.</li>
+</ul>
+<p><img src="/DDPG%20981a3201eaa34edaa970258515883d4e/Untitled%204.png" alt="Untitled"></p>
+<ul>
+<li>Performance Curves using variants of DPG:
+<ul>
+<li>batch normalization</li>
+<li>target networks</li>
+<li>target network and batch normalization</li>
+<li>target network from pixel-only inputs</li>
+</ul>
+</li>
+</ul>
+<p>For some cases, like in the Pendulum Swing up, the pixel inputs actually perform better than a lower state representation. Almost in each case, the worst perfoming one is the one which uses only batch normalization. <strong>The best performing one is the one that uses target networks and batch normalization.</strong></p>
+<h3 id="conclusion">
+  <strong>Conclusion</strong>
+  <a class="heading-link" href="#conclusion">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p><strong>Three key takeaways are:</strong></p>
+<ul>
+<li>To perform well across all tasks, both target network and batch normalization are necessary.</li>
+<li>In some simpler tasks, learning from pixels is as fast as learning with a low-dimensional state descriptor. Convolutional layers may provide an easily separable representation of state space, which is straightforward for the higher layers to learn on quickly.</li>
+<li>The framework is successfully able to expand the concept of model free reinfocement learnings to the continuous action space domain.</li>
+<li>It shows that temporal experience replay and minibatches also help in the half cheetah problem, where learning can be difficult.</li>
+<li>This facilitates complex domains in robotics where it is very hard to use fixed set of actions. It is also very useful in the case of autonomous driving where we need to take action in a continous space.</li>
+</ul>
+<p><strong>Limitations:</strong></p>
+<ul>
+<li>Learning without a target network, as in the original work with DPG, is very poor in many environments.</li>
+<li>On my understanding, in 2D grid world, DDPG could only approximate a simple behaviour such as moving along the straight line to the goal from the start.</li>
+</ul>
+<p><strong>Questions</strong>:</p>
+<ul>
+<li>Which parameters we need to consider to pick the best reinforcement algorithms between <strong>DDPG, PPO, SAC?</strong></li>
+</ul>
+
+      </div>
+
+
+      <footer>
+        
+
+
+        
+        
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+      2019 -
+    
+    2022
+     Kazi Hasan Ibn Arif 
+    ·
+    
+    Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="/js/coder.min.f411a1043e37c7c14dfb03f4d94d60d9ee69cfa413b16d0fd4f28695babb82bb.js" integrity="sha256-9BGhBD43x8FN&#43;wP02U1g2e5pz6QTsW0P1PKGlbq7grs="></script>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+
+</html>

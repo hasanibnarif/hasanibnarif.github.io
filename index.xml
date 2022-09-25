@@ -6,7 +6,17 @@
     <description>Recent content on Kazi Hasan</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 15 Aug 2022 22:01:23 +0600</lastBuildDate><atom:link href="http://hasanibnarif.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 25 Sep 2022 17:25:50 +0600</lastBuildDate><atom:link href="http://hasanibnarif.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CONTINUOUS CONTROL WITH DEEP REINFORCEMENT LEARNING</title>
+      <link>http://hasanibnarif.github.io/posts/three/</link>
+      <pubDate>Sun, 25 Sep 2022 17:25:50 +0600</pubDate>
+      
+      <guid>http://hasanibnarif.github.io/posts/three/</guid>
+      <description>Paper Link: https://arxiv.org/pdf/1509.02971.pdf
+Problem Statement Link to heading DQN was able to solve problems in high-dimensional observation spaces, but action spaces neeeded to be discrete and low-dimensional because each step optimizes over state values. This makes DQN not useful for robotic walking for example. The paper relies on Deep Reinforcement Learning to find multiple coupling action and observation space mappings simultaneously. Physical control task as mentioned have continuous, high-dimensional action spaces.</description>
+    </item>
+    
     <item>
       <title>Critical Analysis on Deep Residual Learning for Image Recognition</title>
       <link>http://hasanibnarif.github.io/posts/two/</link>
